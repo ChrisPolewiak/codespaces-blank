@@ -1,10 +1,10 @@
 <?php
 
-# $hostname = "adres_serwera_sql.mysql.database.azure.com";
-# $username = "admin";
-# $password = "tajne_haslo";
+$hostname = "adres_serwera_sql.mysql.database.azure.com";
+$username = "admin";
+$password = "tajne_haslo";
 
-$link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
+$link = mysql_connect($hostname, $username, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
